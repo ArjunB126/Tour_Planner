@@ -6,6 +6,9 @@ function Card(id,name,info,price,image) {
 
     const description = `${info.subString(0,200)}....`
 
+    function readmoreHandler(){
+        setReadmore(!readmore);
+    }
 
 
     return(
