@@ -2,13 +2,10 @@ import { useState } from "react";
 
 function Card(id,name,info,price,image) {
 
-const[readmore ,setReadmore] = useState(false);
+    const[readmore ,setReadmore] = useState(false);
 
-const description = `${info.subString(0,200)}....`
+    const description = `${info.subString(0,200)}....`
 
-function readmoreHandler(){
-    setReadmore(!readmore);
-}
 
 
     return(
